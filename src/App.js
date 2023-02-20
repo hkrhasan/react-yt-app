@@ -4,9 +4,9 @@ import Card from "./components/Card";
 export default class App extends Component {
   componentDidMount() {
     // const homeEndPoint =
-    //   "https://youtube.googleapis.com/youtube/v3/videos?chart=mostPopular&maxResults=100&key=AIzaSyBA7GIx38ASbBwWPtNToNqTou2QNOvWCK8";
+    //   "https://youtube.googleapis.com/youtube/v3/videos?chart=mostPopular&maxResults=100&key=<your-api-key>";
     // const searchEndpoint =
-    //   "https://youtube.googleapis.com/youtube/v3/search?q=learnwithhkr&key=AIzaSyBA7GIx38ASbBwWPtNToNqTou2QNOvWCK8&maxResults=100";
+    //   "https://youtube.googleapis.com/youtube/v3/search?q=learnwithhkr&key=<your-api-key>&maxResults=100";
     // fetch(homeEndPoint)
     //   .then((res) => res.json())
     //   .then((rJson) => {
