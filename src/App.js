@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Header from "./components/Header";
+import Card from "./components/Card";
+export default class App extends Component {
+  componentDidMount() {
+    // const homeEndPoint =
+    //   "https://youtube.googleapis.com/youtube/v3/videos?chart=mostPopular&maxResults=100&key=AIzaSyBA7GIx38ASbBwWPtNToNqTou2QNOvWCK8";
+    // const searchEndpoint =
+    //   "https://youtube.googleapis.com/youtube/v3/search?q=learnwithhkr&key=AIzaSyBA7GIx38ASbBwWPtNToNqTou2QNOvWCK8&maxResults=100";
+    // fetch(homeEndPoint)
+    //   .then((res) => res.json())
+    //   .then((rJson) => {
+    //     console.log({ rJson });
+    //   });
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render() {
+    return (
+      <div className="flex flex-col gap-y-3">
+        <Header />
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 px-2">
+          {[...Array(50).keys()].map(() => (
+            <Card />
+          ))}
+        </div>
+      </div>
+    );
+  }
 }
-
-export default App;
