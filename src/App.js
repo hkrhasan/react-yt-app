@@ -19,8 +19,8 @@ export default class App extends Component {
       <div className="flex flex-col gap-y-3">
         <Header />
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 px-2">
-          {[...Array(50).keys()].map(() => (
-            <Card />
+          {[...Array(50).keys()].map((number) => (
+            <Card key={number} />
           ))}
         </div>
       </div>
