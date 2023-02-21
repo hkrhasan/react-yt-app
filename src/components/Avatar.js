@@ -9,11 +9,7 @@ export default class Avatar extends Component {
 
   render() {
     return (
-      <div
-        className={`rounded-full overflow-hidden h-${this.props.size || 12} w-${
-          this.props.size || 12
-        }`}
-      >
+      <div className={`rounded-full overflow-hidden w-12 h-12`}>
         <img src={this.props.src || avatarImage} alt="avatart" />
       </div>
     );
