@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import { API_KEY, BASE_URL } from "../utility/constant";
 import Card from "../components/Card";
 
+
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
